@@ -1,0 +1,1 @@
+Move the player with the arrow keys and collect all of the candles.

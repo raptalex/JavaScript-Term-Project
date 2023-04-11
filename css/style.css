@@ -65,6 +65,6 @@ a.back {
     width: auto;
   }
   p#box {
-      max-width: auto;
+      width: auto;
   }
 }
