@@ -1,0 +1,98 @@
+div#gameContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #ddd;
+    padding: 10px;
+    outline: 2px solid #000;
+}
+
+svg#hangman {
+    display: block;
+    margin: 0 auto;
+    background: #ff6f6f;
+    outline: 2px solid #000;
+}
+
+svg#hangman > g > * {
+    opacity: 0.4;
+}
+
+div#info {
+    flex: 1;
+    background: #ffea71;
+    outline: 2px solid #000;
+    width: 256px;
+    margin: 0 auto;
+}
+
+p.status {
+    font-family: serif;
+    text-align: center;
+    font-size: 14pt;
+}
+
+p.loss {
+    color: rgb(209, 0, 0);
+    font-weight: bold;
+}
+
+p.win {
+    color: rgb(5, 148, 0);
+    font-weight: bold;
+}
+
+div#lettersContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+div#inputContainer {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+
+input#guess {
+    flex: 3;
+    padding: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    background: #b7b6ff;
+    border: 2px solid #000;
+}
+
+button#enterguess {
+    flex: 1;
+    font-size: 14pt;
+    font-weight: bold;
+    background: linear-gradient(35deg, rgb(0, 170, 28), rgb(4, 105, 26));
+    border: 2px solid #000;
+    color: rgb(219, 0, 0);
+}
+
+button#enterguess:hover {
+    background: linear-gradient(35deg, rgb(0, 218, 36), rgb(17, 175, 51));
+}
+
+button#enterguess:active {
+    background: linear-gradient(35deg, rgb(218, 160, 0), rgb(255, 251, 0));
+}
+
+div.letter {
+    font-family: serif;
+    font-size: 20pt;
+    flex: 0 0 32px;
+    outline: 2px solid #000;
+    background: #ffea71;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    text-transform: uppercase;
+}

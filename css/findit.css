@@ -1,0 +1,34 @@
+div#container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+div.box {
+    display: flex;
+    flex: 0 1 100px;
+    width: 100px;
+    height: 100px;
+    background: #a52a2a;
+    cursor: pointer;
+    border: 5px solid #4e301c;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+div.box:hover {
+    filter: hue-rotate(230deg);
+}
+
+div.box:active {
+    filter: brightness(150%);
+    color: white;
+}
+
+#tries, #message {
+    text-align: center;
+}

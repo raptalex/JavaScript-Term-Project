@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hangman</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hangman.css">
+<link rel="icon" href="media/favicon_hangman.png">
+<script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+<section id="container">
+<h2>Hangman</h2>
+<p id="box">Try to guess the correct word before the hangman is completed. Use your <span style="color:red;font-weight:bold;">7</span> tries wisely! For more info click <a href="hangman_readme.txt">here</a>.
+</p>
+<br>
+<div id="gameContainer">
+<!-- SVG exported from inkscape, slightly modified, and then used as inline graphic -->
+<svg id="hangman" version="1.1" width="128" height="176" viewBox="0 0 128 176" xmlns="http://www.w3.org/2000/svg">
+<g transform="matrix(.7875 0 0 .7875 -17.468 -28.733)">
+    <circle cx="103.47" cy="68.864" r="25.427" stroke-width=".26458" id="head"/>
+    <rect x="84.403" y="100.21" width="37.165" height="74.329" ry="0" stroke-width=".18941" id="torso"/>
+    <rect transform="rotate(29.867)" x="103.44" y="52.249" width="18.094" height="74.329" ry="0" id="leftArm"/>
+    <rect transform="matrix(-.86718 .49799 .49799 .86718 0 0)" x="-75.522" y="155.02" width="18.094" height="74.329" ry="0" id="rightArm"/>
+    <rect transform="rotate(29.867)" x="163.02" y="113.86" width="18.094" height="74.329" ry="0" id="leftLeg"/>
+    <rect transform="matrix(-.86718 .49799 .49799 .86718 0 0)" x="-15.946" y="216.63" width="18.094" height="74.329" ry="0" id="rightLeg"/>
+</g>
+</svg>
+<div id="info">
+    <p id="wordDifficulty" class="status"></p>
+    <p id="gameStatus" class="status"></p>
+</div>
+<div id="lettersContainer">
+</div>
+<div id="inputContainer">
+    <input id="guess" type="text" placeholder="Enter a word or letter">
+    <button id="enterguess" type="button">CHECK</button>
+</div>
+</div>
+<br>
+<a href="index.html" class="back">Back</a>
+</section>
+<script src="js/hangman.js"></script>
+</body>
+</html>

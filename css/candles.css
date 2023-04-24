@@ -2,13 +2,41 @@ canvas {
     display: block;
     background: url(../media/sprite_greywall.png);
     background-size: 32px 32px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: none;
+    outline: 4px solid #000;
 }
 section#container {
     width: 42vw;
 }
+
+#playgame {
+  display: block;
+  width: 228px;
+  margin: 15px auto;
+  height: 128px;
+  font-size: 24pt;
+  background: rgb(32, 32, 184);
+  border: 6px solid rgb(0, 0, 211);
+  border-radius: 15px;
+  color: rgb(224, 165, 0);
+}
+
+#playgame:hover {
+  background: rgb(42, 42, 238);
+  border: 6px solid rgb(0, 0, 175);
+}
+
+#playgame:active {
+  background: rgb(75, 75, 231);
+  border: 6px solid rgb(52, 52, 170);
+}
+
 @media only screen and (max-width: 600px) {
-    section#container {
-      width: auto;
-    }
+  section#container {
+    width: auto;
   }
+}

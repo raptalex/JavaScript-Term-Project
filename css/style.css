@@ -14,7 +14,7 @@ section#container {
     border-radius: 10px;
     background: #03a42de0;
     padding: 5px;
-    width: 30vw;
+    width: 43vw;
     margin: 0 auto;
 }
 
@@ -49,18 +49,23 @@ p#box {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 182);
 }
 
 a:hover {
-    color: red;
+    color: rgb(219, 18, 18);
 }
 
 a.back {
     font-size: 16pt;
 }
 
-@media only screen and (max-width: 600px) {
+a#readme {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
   section#container {
     width: auto;
   }
